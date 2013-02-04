@@ -486,10 +486,10 @@ setKeyboardMouseCallback (Just cb) = do
                                              cb (Char        c) Down m p))
    setKeyboardUpCallback (Just (\c   p -> do m <- getModifiers
                                              cb (Char        c) Up   m p))
-   setSpecialCallback    (Just (\s   p -> do m <- getModifiers
-                                             cb (SpecialKey  s) Down m p))
-   setSpecialUpCallback  (Just (\s   p -> do m <- getModifiers
-                                             cb (SpecialKey  s) Up   m p))
+--   setSpecialCallback    (Just (\s   p -> do m <- getModifiers
+--                                             cb (SpecialKey  s) Down m p))
+--   setSpecialUpCallback  (Just (\s   p -> do m <- getModifiers
+--                                             cb (SpecialKey  s) Up   m p))
    setMouseCallback      (Just (\b s p -> do m <- getModifiers
                                              cb (MouseButton b) s    m p))
 
